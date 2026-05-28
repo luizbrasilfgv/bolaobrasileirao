@@ -6913,9 +6913,9 @@ function matchCardHTML(match, showPred){
         <div class="pred-row">
           <span class="pred-label">Seu palpite</span>
           <div class="pred-inputs">
-            <input class="pred-input" type="number" min="0" max="30" placeholder="?" data-mid="${match.id}" data-side="home" value="${ph}">
+            <input class="pred-input" type="number" min="0" max="30" placeholder="?" id="ph-${match.id}" data-mid="${match.id}" data-side="home" value="${ph}">
             <span class="pred-sep">×</span>
-            <input class="pred-input" type="number" min="0" max="30" placeholder="?" data-mid="${match.id}" data-side="away" value="${pa}">
+            <input class="pred-input" type="number" min="0" max="30" placeholder="?" id="pa-${match.id}" data-mid="${match.id}" data-side="away" value="${pa}">
           </div>
           <button class="btn btn-green btn-sm pred-save-btn" onclick="handleSavePred('${match.id}')">${myPred?'Atualizar':'Salvar'}</button>
           ${myPred ? `<span class="pred-result pred-saved">✓ Salvo${lastTs}</span>` : ''}
@@ -6985,9 +6985,11 @@ async function savePred(matchId, importMode = false, importSource = 'manual'){
   // importMode: caller passes h/a directly via _doSavePred
   if(importMode) return false;
 
-  // Read from DOM — use getElementById fallback if data-attr fails
-  let hEl = document.querySelector(`.pred-input[data-mid="${matchId}"][data-side="home"]`);
-  let aEl = document.querySelector(`.pred-input[data-mid="${matchId}"][data-side="away"]`);
+  // Read from DOM — use unique ID first (most reliable)
+  let hEl = document.getElementById(`ph-${matchId}`) ||
+            document.querySelector(`.pred-input[data-mid="${matchId}"][data-side="home"]`);
+  let aEl = document.getElementById(`pa-${matchId}`) ||
+            document.querySelector(`.pred-input[data-mid="${matchId}"][data-side="away"]`);
 
   // fallback: try by id pattern used in operator view
   if(!hEl) hEl = document.getElementById(`op-h-${matchId}`);
