@@ -2143,6 +2143,7 @@ select.input {
     <span style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);font-weight:800;flex-shrink:0">Filtrar:</span>
     <select id="gfGroupSel" onchange="applyGlobalFilter('group',this.value)" style="background:var(--surface-2);border:1px solid var(--border-2);border-radius:8px;padding:5px 24px 5px 10px;font-size:12px;font-weight:600;color:var(--text);cursor:pointer;appearance:none;background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%226%22%3E%3Cpath d=%22M1 1l4 4 4-4%22 stroke=%22%236b7a95%22 stroke-width=%221.5%22 fill=%22none%22 stroke-linecap=%22round%22/%3E%3C/svg%3E');background-repeat:no-repeat;background-position:right 8px center;outline:none;" id="gfGroupSel">
       <option value="all">Todas as rodadas</option>
+      <option value="Rodada 18">Rodada 18</option>
       <option value="Rodada 19">Rodada 19</option><option value="Rodada 20">Rodada 20</option>
       <option value="Rodada 21">Rodada 21</option><option value="Rodada 22">Rodada 22</option>
       <option value="Rodada 23">Rodada 23</option><option value="Rodada 24">Rodada 24</option>
@@ -2316,6 +2317,176 @@ function flag(name, size){
 function teamName(name){ return COPA2026_NAMES_PT[name] || name || '?'; }
 
 const BRASILEIRAO_MATCHES = [
+  {
+    "id": "r18_01",
+    "rodada": 18,
+    "phase": "Rodada 18",
+    "group": "",
+    "home": "Flamengo",
+    "away": "Coritiba",
+    "datetime": "2026-05-30T16:00:00-03:00",
+    "deadline": "2026-05-30T14:00:00-03:00",
+    "venue": "Maracanã, Rio de Janeiro",
+    "status": "scheduled",
+    "result": {
+      "home": null,
+      "away": null
+    },
+    "knockoutLabel": null
+  },
+  {
+    "id": "r18_02",
+    "rodada": 18,
+    "phase": "Rodada 18",
+    "group": "",
+    "home": "Athletico-PR",
+    "away": "Mirassol",
+    "datetime": "2026-05-30T16:00:00-03:00",
+    "deadline": "2026-05-30T14:00:00-03:00",
+    "venue": "Arena da Baixada, Curitiba",
+    "status": "scheduled",
+    "result": {
+      "home": null,
+      "away": null
+    },
+    "knockoutLabel": null
+  },
+  {
+    "id": "r18_03",
+    "rodada": 18,
+    "phase": "Rodada 18",
+    "group": "",
+    "home": "Grêmio",
+    "away": "Corinthians",
+    "datetime": "2026-05-30T17:30:00-03:00",
+    "deadline": "2026-05-30T15:30:00-03:00",
+    "venue": "Arena do Grêmio, Porto Alegre",
+    "status": "scheduled",
+    "result": {
+      "home": null,
+      "away": null
+    },
+    "knockoutLabel": null
+  },
+  {
+    "id": "r18_04",
+    "rodada": 18,
+    "phase": "Rodada 18",
+    "group": "",
+    "home": "Bahia",
+    "away": "Botafogo",
+    "datetime": "2026-05-30T17:30:00-03:00",
+    "deadline": "2026-05-30T15:30:00-03:00",
+    "venue": "Arena Fonte Nova, Salvador",
+    "status": "scheduled",
+    "result": {
+      "home": null,
+      "away": null
+    },
+    "knockoutLabel": null
+  },
+  {
+    "id": "r18_05",
+    "rodada": 18,
+    "phase": "Rodada 18",
+    "group": "",
+    "home": "Remo",
+    "away": "São Paulo",
+    "datetime": "2026-05-30T19:30:00-03:00",
+    "deadline": "2026-05-30T17:30:00-03:00",
+    "venue": "Baenão, Belém",
+    "status": "scheduled",
+    "result": {
+      "home": null,
+      "away": null
+    },
+    "knockoutLabel": null
+  },
+  {
+    "id": "r18_06",
+    "rodada": 18,
+    "phase": "Rodada 18",
+    "group": "",
+    "home": "Santos",
+    "away": "Vitória",
+    "datetime": "2026-05-30T21:00:00-03:00",
+    "deadline": "2026-05-30T19:00:00-03:00",
+    "venue": "Vila Belmiro, Santos",
+    "status": "scheduled",
+    "result": {
+      "home": null,
+      "away": null
+    },
+    "knockoutLabel": null
+  },
+  {
+    "id": "r18_07",
+    "rodada": 18,
+    "phase": "Rodada 18",
+    "group": "",
+    "home": "Red Bull Bragantino",
+    "away": "Internacional",
+    "datetime": "2026-05-31T11:00:00-03:00",
+    "deadline": "2026-05-31T09:00:00-03:00",
+    "venue": "Cícero Souza Marques, Bragança Paulista",
+    "status": "scheduled",
+    "result": {
+      "home": null,
+      "away": null
+    },
+    "knockoutLabel": null
+  },
+  {
+    "id": "r18_08",
+    "rodada": 18,
+    "phase": "Rodada 18",
+    "group": "",
+    "home": "Vasco",
+    "away": "Atlético-MG",
+    "datetime": "2026-05-31T16:00:00-03:00",
+    "deadline": "2026-05-31T14:00:00-03:00",
+    "venue": "São Januário, Rio de Janeiro",
+    "status": "scheduled",
+    "result": {
+      "home": null,
+      "away": null
+    },
+    "knockoutLabel": null
+  },
+  {
+    "id": "r18_09",
+    "rodada": 18,
+    "phase": "Rodada 18",
+    "group": "",
+    "home": "Palmeiras",
+    "away": "Chapecoense",
+    "datetime": "2026-05-31T16:00:00-03:00",
+    "deadline": "2026-05-31T14:00:00-03:00",
+    "venue": "Allianz Parque, São Paulo",
+    "status": "scheduled",
+    "result": {
+      "home": null,
+      "away": null
+    },
+    "knockoutLabel": null
+  },
+  {
+    "id": "r18_10",
+    "rodada": 18,
+    "phase": "Rodada 18",
+    "group": "",
+    "home": "Cruzeiro",
+    "away": "Fluminense",
+    "datetime": "2026-05-31T20:30:00-03:00",
+    "deadline": "2026-05-31T18:30:00-03:00",
+    "venue": "Mineirão, Belo Horizonte",
+    "status": "scheduled",
+    "result": {
+      "home": null,
+      "away": null
+    },
+    "knockoutLabel": null
+  },
   {
     "id": "m001",
     "rodada": 19,
@@ -5742,7 +5913,7 @@ const PHASE_ORDER = [
 ];
 
 const PHASE_SHORT = {
-  'Rodada 19':'Rd 19','Rodada 20':'Rd 20','Rodada 21':'Rd 21','Rodada 22':'Rd 22',
+  'Rodada 18':'Rd 18','Rodada 19':'Rd 19','Rodada 20':'Rd 20','Rodada 21':'Rd 21','Rodada 22':'Rd 22',
   'Rodada 23':'Rd 23','Rodada 24':'Rd 24','Rodada 25':'Rd 25','Rodada 26':'Rd 26',
   'Rodada 27':'Rd 27','Rodada 28':'Rd 28','Rodada 29':'Rd 29','Rodada 30':'Rd 30',
   'Rodada 31':'Rd 31','Rodada 32':'Rd 32','Rodada 33':'Rd 33','Rodada 34':'Rd 34',
@@ -5954,7 +6125,7 @@ function calcSpecialPoints(participantId){
 }
 
 // Deadline for special predictions: before first match (2026-06-11 16:00 BRT)
-const SPECIAL_PRED_DEADLINE = new Date('2026-07-22T19:00:00-03:00'); // antes da rodada 19
+const SPECIAL_PRED_DEADLINE = new Date('2026-05-30T14:00:00-03:00'); // antes da rodada 18
 function isSpecialPredOpen(){
   return new Date() < SPECIAL_PRED_DEADLINE && state.pool.predictionsOpen;
 }
@@ -6778,7 +6949,7 @@ function renderHome(){
           <div>
             <div style="font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold-2);font-weight:800;margin-bottom:4px">🏆 Palpite especial</div>
             <div style="font-size:16px;font-weight:800">Quem vai ganhar a Copa?</div>
-            <div style="font-size:12px;color:var(--muted);margin-top:3px">Prazo: antes da Rodada 19 · 22/07 às 19:00 · <strong style="color:var(--red)">Não pode ser alterado após salvar!</strong></div>
+            <div style="font-size:12px;color:var(--muted);margin-top:3px">Prazo: antes da Rodada 18 · 30/05 às 14:00 · <strong style="color:var(--red)">Não pode ser alterado após salvar!</strong></div>
           </div>
           <button class="btn btn-primary" onclick="openSpecialPredModal()">Fazer palpite especial →</button>
         </div>
